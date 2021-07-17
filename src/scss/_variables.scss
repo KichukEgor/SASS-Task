@@ -1,2 +1,42 @@
-$font-color: #000000;
-$nav-link-background: rgb(3, 177, 177)
+$nav-color: #000000;
+$nav-link-background: rgb(3, 177, 177);
+$border-style: #323746 6px solid;
+
+@mixin glass-effect {
+  background: rgba(44, 248, 126, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@mixin heading-style {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  &:hover {
+    color: #00ffff;
+  }
+}
+
+@mixin footer-heading {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  &:hover {
+    color: #f06c64;
+  }
+}
+
+@mixin button-standart-style {
+  border-radius: 1rem;
+  background: #03b1b1;
+  width: 10rem;
+  height: 4rem;
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
